@@ -1,0 +1,42 @@
+@charset "utf-8";
+/*CSS document*/
+.hidden
+{
+	display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Fontface settings*/
+
+@font-face {
+    font-family: 'libre_franklin-medium';
+    src: url('../fonts/librefranklin-medium-webfont.woff2') format('woff2'),
+         url('../fonts/librefranklin-medium-webfont.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'libre_franklin-semibold';
+    src: url('../fonts/librefranklin-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/librefranklin-semibold-webfont.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'libre_franklin-italic';
+    src: url('../fonts/librefranklin-italic-webfont.woff2') format('woff2'),
+         url('../fonts/librefranklin-italic-webfont.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'libre_franklin-bold';
+    src: url('../fonts/librefranklin-bold-webfont.woff2') format('woff2'),
+         url('../fonts/librefranklin-bold-webfont.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'libre_franklin-regular';
+    src: url('../fonts/librefranklin-regular-webfont.woff2') format('woff2'),
+         url('../fonts/librefranklin-regular-webfont.woff') format('woff');
+}
