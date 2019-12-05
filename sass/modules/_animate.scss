@@ -1,0 +1,14 @@
+//THIS IS THE SCROLL SNAP ON THE IMAGE GALLERY
+.faveThings{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+.thing{
+    scroll-snap-align:start;
+}

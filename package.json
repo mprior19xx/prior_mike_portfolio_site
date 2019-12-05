@@ -1,24 +1,33 @@
 {
-  "name": "prior_mike_portfolio_site",
+  "name": "prior_mike_infographic_poster",
   "version": "1.0.0",
-  "description": "Michael Prior promotional portfolio site",
-  "main": "index.js",
+  "description": "Infographic Poster",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon app"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mprior19xx/prior_mike_portfolio_site.git"
+    "url": "git+https://github.com/mprior19xx/prior_m_infographic_poster"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mprior19xx/prior_mike_portfolio_site/issues"
+    "url": "https://github.com/mprior19xx/prior_m_infographic_poster/issues"
   },
-  "homepage": "https://github.com/mprior19xx/prior_mike_portfolio_site#readme",
-  "devDependencies": {
+  "homepage": "https://github.com/mprior19xx/prior_m_infographic_poster#readme",
+  "dependencies": {
+    "autoprefixer": "^9.7.1",
+    "cssnano": "^4.1.10",
+    "express": "^4.17.1",
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.0.2"
+    "gulp-postcss": "^8.0.0",
+    "hbs": "^4.0.6",
+    "mysql": "^2.17.1",
+    "path": "^0.12.7",
+    "sass": "^1.23.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
   }
 }

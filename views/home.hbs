@@ -1,0 +1,20 @@
+<section id="faveThingsSection" class="section">
+    <div class="faveThings">
+        <!-- loop through db and put the info on the page -->
+        {{#each thing}} <!-- A for each loop -->
+        <div class="thing">
+            {{!-- img from db --}}
+            <img src="images/{{Image}}" alt="Video Game Cover" class="thingImage">
+            {{!-- title from db --}}
+            <h2>{{Title}}</h2>
+            {{!-- role from db --}}
+            <h3>{{Role}}</h3>
+            <a class="link" href="{{Link}}">{{Link}}</a>
+            <!-- Place Piece info here -->
+            <p class="info" id="info{{ID}}"></p>
+            {{!-- See more button --}}
+            <a href="{{ID}}" class="seeMore" id="seeMore{{ID}}">More Info</a>
+        </div>
+        {{/each}}
+    </div>
+</section>
