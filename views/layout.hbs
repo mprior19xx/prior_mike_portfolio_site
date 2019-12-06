@@ -9,7 +9,8 @@
     <!-- css stuff -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&display=swap" rel="stylesheet">
     <!-- link to reset -->
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/main.css">
     <title>Michael Prior - Design</title>
@@ -18,7 +19,6 @@
 <body>
 <div id="siteCon">
     <h1 class="hidden">Michael Prior - Design</h1>
-
     <main>
         <header id="mainHeader">
             <!-- Header Con -->
@@ -53,18 +53,26 @@
                     </ul> <!--End menu-->
                 </nav> <!-- End mainNav-->
         </header>
+        {{!-- HERO SECTION --}}
+        <div id="heroCon">
+                    <h2 class="hidden">Main Hero Video</h2>
+                    <video width="100%" height="100%" controls="False" autoplay >
+                        <source src="video/prior_m_logo_reveal.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                        Your browser does not support this video.
+                    </video>
+        </div>
         {{{ body }}}
-        {{!-- Back to top button --}}
-        <a href="#" class="importantText" id="backToTop">^ Back To Top</a>
-        
-
-
+        {{!-- FOOTER SECTION --}}
+        <section id="footerSection">
+            {{!-- Back to top button --}}
+            <a href="#" class="importantText" id="backToTop">^ Back To Top</a>
+            <div id="footerLogoContainer">
+                <a href="/"><img src="images/mp-logo-color.png" alt="Michael Prior Logo" id="headerLogo"></a>
+             </div>
+        </section>
     </main>
-
-
-   
     <script type="module" src="js/main.js"></script>
 </div>
 </body>
-
 </html>

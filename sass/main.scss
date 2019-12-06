@@ -4,6 +4,9 @@
 @import 'modules/_animate.scss';
 @import 'modules/_header.scss';
 @import 'modules/_gallery.scss';
+@import 'modules/_contact.scss';
+@import 'modules/_hero.scss';
+@import 'modules/_about.scss';
 
 // Hides all unwanted items
 .hidden {
@@ -13,6 +16,7 @@
 // Styles and positions body text
 body {
     color: $mainColour;
+    background-color: grey;
     font-family: $mainFont;
     text-align: center;
     margin: 0 auto;
@@ -23,7 +27,8 @@ img {
 }
 
 video{
-    max-width:100%;
+    max-width:90%;
+    margin-top:50px;
 }
 
 body{

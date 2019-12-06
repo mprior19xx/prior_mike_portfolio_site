@@ -1,0 +1,27 @@
+#aboutSection{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    height:200px;
+    margin-top:45px;
+    max-width:90%;
+    margin-bottom:50px;
+}
+
+#aboutImg{
+    width:60%;
+}
+
+#aboutLeft{
+    width:40%;
+    justify-content: center;
+}
+
+#aboutCopy{
+    margin-top:10px;
+}
+
+#aboutSkills{
+    margin-top:10px;
+}
+
