@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- css stuff -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&display=swap" rel="stylesheet">
     <!-- link to reset -->
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
     <link href="css/reset.css" rel="stylesheet" type="text/css">
@@ -19,36 +20,43 @@
     <h1 class="hidden">Michael Prior - Design</h1>
 
     <main>
-        <header id="headerCon">
-            <div id="logoCon">
-                <img src="images/mp-logo-color.png" id="headerLogo">
-                <h2>Michael Prior</h2>
-            </div>
+        <header id="mainHeader">
+            <!-- Header Con -->
+            <div id="headerCon">
+                <!--Logo-->
+                <div id="headerLogoContainer">
+                <a href="/"><img src="images/mp-logo-color.png" alt="Michael Prior Logo" id="headerLogo"></a>
+                </div>
+
+                <!-- Menu button -->
+                <div id="menuButton">
+                    <div id="lines">
+                        <div id="line1"></div>
+                        <div id="line2"></div>
+                        <div id="line3"></div>
+                    </div> <!-- End lines -->
+                </div> <!-- End menuButton -->
+            </div> <!-- End headerCon -->
+
+            <!--Main navigation-->
+            <div id="menuBackground"></div>
+
+            <div id="menuContent">
+                <nav id="mainNav">
+                    <h2 class="hidden">Main Navigation</h2>
+
+                    <ul id="menu">
+                        <li><a href="/" class="menuBtn importantText" class="importantText"  id="homeBtn">Home</a></li>
+                        <li><a href="/#portfolioSection" class="menuBtn importantText" id="portfolioBtn">Portfolio</a></li>
+                        <li><a href="/#aboutSection" class="menuBtn importantText" id="aboutBtn">About</a></li>
+                        <li><a href="/#contactSection" class="menuBtn importantText" id="contactBtn">Contact</a></li>
+                    </ul> <!--End menu-->
+                </nav> <!-- End mainNav-->
         </header>
-
         {{{ body }}}
-
-        <div id="aboutCon">
-            <h2>About Me</h2>
-            <div id="aboutImg">
-                <img src="images/self_pic_1.png">
-            </div>
-
-            <div id="aboutCopy">
-                <h2 class="hidden">About Me Copy</h2>
-                ALL THE INFO ABOUT ME GOES HERE!
-            </div>
-
-            <div id="aboutSkills">
-                <h2 class="hidden">My Skills</h2>
-
-            </div>
-
-            <div id="contactCon">
-                <h2>Contact Me</h2>
-                CONTACT FORM HERE
-            </div>
-        </div>
+        {{!-- Back to top button --}}
+        <a href="#" class="importantText" id="backToTop">^ Back To Top</a>
+        
 
 
     </main>
