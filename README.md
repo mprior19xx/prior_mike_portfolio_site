@@ -1,22 +1,24 @@
-Infographic Poster Assignment by Mike Prior
+Promotional Portfolio Website by Michael Prior
 
 Authors
-Mike Prior
+
+Michael Prior
 
 Purpose
-The purpose of this porject is to display a previously made infographic poster as a responsive web app.
+
+This is a self promotional site developed to showcase my skills as an artist, designer, and developer.
 
 Description
-The interactive site is to be designed mobile first and should have interactive and/or animated elements. The displayed information should be pulled from a database using AJAX calls.
 
-This site is based on the statistics of video game sales, more importantly, the sales of Sony Playstation games spanning across time. 
 
 Languages Used
+
 HTML5
 CSS3
 JavaScript
 
 Programs and Resources
+
 Adobe Illustrator
 Adobe Photoshop
 Visual Code Studio
