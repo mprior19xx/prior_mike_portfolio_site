@@ -1,0 +1,24 @@
+label{
+    padding:10px;
+}
+
+#contactSection{
+    display:block;
+    margin-top:35px;
+    margin-bottom:35px;
+}
+
+#contactForm{
+    display:flex;
+    flex-direction:column;
+    max-width:80%;
+    margin: 0 auto;
+}
+
+#firstName{
+    margin-right:15px;
+}
+
+#lastName{
+    margin-left:15px;
+}
