@@ -1,4 +1,29 @@
-<section id="faveThingsSection" class="section">
+{{!-- HERO SECTION --}}
+<div id="heroCon">
+            <h2 class="hidden">Main Hero Video</h2>
+            <img src="images/mp-logo-color.png">
+</div>
+
+<div id="aboutSection">
+    <h2>About Me</h2>
+    <div id="aboutImg">
+        <img src="images/self_pic_1.png">
+    </div>
+
+    <div id="aboutCopy">
+         <h2 class="hidden">About Me Copy</h2>
+            ALL THE INFO ABOUT ME GOES HERE!
+    </div>
+
+    <div id="aboutSkills">
+        <h2 class="hidden">My Skills</h2>
+
+    </div>
+</div>
+
+
+{{!-- PORTFOLIO SECTION --}}
+<section id="portfolioSection" class="section">
     <div class="faveThings">
         <!-- loop through db and put the info on the page -->
         {{#each thing}} <!-- A for each loop -->
@@ -18,3 +43,34 @@
         {{/each}}
     </div>
 </section>
+
+{{!-- CONTACT SECTION --}}
+<section id="contactSection">
+    <h2>Contact</h2>
+
+    <p id="contactCaption" class="importantText">If you're interested in contacting me please fill out the form below!</p>
+
+    <div id="contactForm">
+        <!-- Name -->
+        <label for="firstName">Name</label>
+        <div id="contactNameInput">
+            <input id="firstName" type="text" placeholder="First Name" required>
+            <input id="lastName" type="text" placeholder="Last Name" required>
+        </div> <!-- End contactName -->
+
+		<!-- Email -->
+		<label for="email">Email</label>
+		<input id="email" type="Email" placeholder="example@website.com" required>
+
+        <!-- Subject -->
+		<label for="subject">Subject</label>
+		<input id="subject" type="text" placeholder="Let's work together!" required>
+
+		<!-- Message -->
+		<label for="message">Message</label>
+		<textarea id="message" cols="50" rows="14" placeholder="Write your message here!" required></textarea>
+
+		<!-- Submit Button -->
+		<input class="submit" type="submit" value="Submit">
+	</div> <!-- End contactForm -->
+</section> <!-- End contactSection -->

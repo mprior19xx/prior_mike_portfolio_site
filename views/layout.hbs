@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- css stuff -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&display=swap" rel="stylesheet">
     <!-- link to reset -->
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
     <link href="css/reset.css" rel="stylesheet" type="text/css">
@@ -17,13 +18,50 @@
 <body>
 <div id="siteCon">
     <h1 class="hidden">Michael Prior - Design</h1>
-    <div id="titleCon">
-        <img class="title" id="titleImg" src="">
-    </div>
 
     <main>
+        <header id="mainHeader">
+            <!-- Header Con -->
+            <div id="headerCon">
+                <!--Logo-->
+                <div id="headerLogoContainer">
+                <a href="/"><img src="images/mp-logo-color.png" alt="Michael Prior Logo" id="headerLogo"></a>
+                </div>
+
+                <!-- Menu button -->
+                <div id="menuButton">
+                    <div id="lines">
+                        <div id="line1"></div>
+                        <div id="line2"></div>
+                        <div id="line3"></div>
+                    </div> <!-- End lines -->
+                </div> <!-- End menuButton -->
+            </div> <!-- End headerCon -->
+
+            <!--Main navigation-->
+            <div id="menuBackground"></div>
+
+            <div id="menuContent">
+                <nav id="mainNav">
+                    <h2 class="hidden">Main Navigation</h2>
+
+                    <ul id="menu">
+                        <li><a href="/" class="menuBtn importantText" class="importantText"  id="homeBtn">Home</a></li>
+                        <li><a href="/#portfolioSection" class="menuBtn importantText" id="portfolioBtn">Portfolio</a></li>
+                        <li><a href="/#aboutSection" class="menuBtn importantText" id="aboutBtn">About</a></li>
+                        <li><a href="/#contactSection" class="menuBtn importantText" id="contactBtn">Contact</a></li>
+                    </ul> <!--End menu-->
+                </nav> <!-- End mainNav-->
+        </header>
         {{{ body }}}
+        {{!-- Back to top button --}}
+        <a href="#" class="importantText" id="backToTop">^ Back To Top</a>
+        
+
+
     </main>
+
+
    
     <script type="module" src="js/main.js"></script>
 </div>
