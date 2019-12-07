@@ -7,6 +7,9 @@
 @import 'modules/_contact.scss';
 @import 'modules/_hero.scss';
 @import 'modules/_about.scss';
+@import 'modules/_footer.scss';
+@import 'modules/_hero.scss';
+@import 'modules/_demo.scss';
 
 // Hides all unwanted items
 .hidden {
@@ -16,7 +19,6 @@
 // Styles and positions body text
 body {
     color: $mainColour;
-    background-color: grey;
     font-family: $mainFont;
     text-align: center;
     margin: 0 auto;
@@ -35,4 +37,12 @@ body{
     max-width:100%;
     margin:0 auto;
     justify-content: center;
+}
+
+h2{
+    margin-bottom:10px;
+}
+
+h3{
+    margin-bottom:10px;
 }

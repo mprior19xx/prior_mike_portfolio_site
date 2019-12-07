@@ -1,3 +1,13 @@
+<div id="heroCon">
+            <h2 class="hidden">Main Hero Video</h2>
+            <video  controls="False" autoplay >
+                <source class="heroVid" src="video/prior_m_logo_reveal.mp4" type="video/mp4">
+                <source class="heroVid" src="video/prior_m_logo_reveal.ogg" type="video/ogg">
+                Your browser does not support this video.
+            </video>
+            <img id="heroTitle" src="images/hero_title.png" alt="Michael Prior Design">
+</div>
+
 <div id="aboutSection">
     <h2 class="hidden">About Me Section</h2>
 
@@ -20,7 +30,11 @@
 
 
 {{!-- PORTFOLIO gallery SECTION --}}
+<div id="portTitleCon">
+    <img src="images/port_title.png" id="portTitle" alt="My Portfolio Title">
+</div>
 <section id="portfolioSection" class="section">
+    <h2 class="hidden">My Portfolio</h2>
     <div class="faveThings">
         <!-- loop through db and put the info on the page -->
         {{#each thing}} <!-- A for each loop -->
@@ -41,9 +55,16 @@
     </div>
 </section>
 
+{{!-- DEMO REEL SECTION --}}
+<section id="demoSection">
+    <h2 class="hidden">Demo Reel</h2>
+    <img src="images/demo_reel_title.png" id="demoTitle" alt="Demo Reel Title">
+    <iframe  id="demoReel" src="https://www.youtube.com/embed/CYn7_Fwsg1M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+
 {{!-- CONTACT SECTION --}}
 <section id="contactSection">
-    <h2>Contact</h2>
+    <h2 class="hidden">Contact</h2>
     <p id="contactText" class="importantText">If you're interested in contacting me please fill out the form below!</p>
 
     <div id="contactForm">
