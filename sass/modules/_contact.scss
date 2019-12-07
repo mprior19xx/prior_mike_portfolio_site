@@ -1,5 +1,7 @@
 label{
-    padding:10px;
+    margin-top:15px;
+    margin-bottom:5px;
+    text-align:left;
 }
 
 #contactTitle{
@@ -8,10 +10,10 @@ label{
 
 #contactSection{
     display:block;
-    margin-top:100px;
+    margin-top:120px;
     background: black;
     padding-bottom:20px;
-    padding-top:25px;
+    padding-top:20px;
 }
 
 #contactText{
@@ -38,11 +40,7 @@ label{
 }
 
 #firstName{
-    margin-right:15px;
-}
-
-#lastName{
-    margin-left:15px;
+    margin-right:35px;
 }
 
 .submit{

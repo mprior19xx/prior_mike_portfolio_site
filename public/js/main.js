@@ -8,8 +8,6 @@ const myVM = (() => {
         e.preventDefault();
         TweenMax.to(window, 1, {scrollTo:0});
     }
-    // Back to top on user click
-    toTop.addEventListener("click", backToTop);
 
 
     // MOBILE MENU HANDLER
