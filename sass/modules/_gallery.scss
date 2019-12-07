@@ -1,6 +1,6 @@
 #portTitle{
     width:90%;
-    margin-top:15px;
+    margin-top:25px;
 }
 
 #portfolioSection{
@@ -8,6 +8,7 @@
     border-style: solid;
     border-width: 2px;
     border-color: rgba(0, 0, 0, 0.5);
+    font-family: $mainFont;
 }
 
 
@@ -51,6 +52,17 @@
 
 .thing img:hover{
     opacity:1.0;
+}
+
+.thing h2{
+    font-size:22px;
+    font-family: $mainFont;
+    color: black;
+}
+
+.thing h3{
+    font-family: $mainFont;
+    opacity: 0.8;
 }
 
 // Styles See more

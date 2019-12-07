@@ -1,11 +1,16 @@
 <div id="heroCon">
             <h2 class="hidden">Main Hero Video</h2>
-            <video  controls="False" autoplay >
+            <video  controls="False" autoplay="true" loop>
                 <source class="heroVid" src="video/prior_m_logo_reveal.mp4" type="video/mp4">
                 <source class="heroVid" src="video/prior_m_logo_reveal.ogg" type="video/ogg">
                 Your browser does not support this video.
             </video>
             <img id="heroTitle" src="images/hero_title.png" alt="Michael Prior Design">
+            <div id="heroSocial">
+                <img src="images/fb_icon_wht.svg" class="whiteIcon">
+                <img src="images/yt_icon_wht.svg" class="whiteIcon">
+                <img src="images/li_icon_wht.svg" class="whiteIcon">
+            </div>
 </div>
 
 <div id="aboutSection">
@@ -19,15 +24,12 @@
     <div id="aboutLeft">
         <div id="aboutCopy">
             <h2 class="hidden">About Me Copy</h2>
-            <p>Hello my name is Michael Prior, I am a designer and artist from the London Ontario area. I love fast cars and faster guitars, and a good cup of coffee after 10pm. </p>
-        </div>
-        <div id="aboutSkills">
-                <h2 class="hidden">My Skills</h2>
-                <p>I am pretty good at a whole lot of different things. (see below)</p>
+            <p>Hello my name is Michael Prior, I am a designer and artist from the London Ontario area. I am a student at Fanshawe College, in the Interactive Media Design program. Once graduated, I plan to continue learning new and exciting ways of developing interesting content.</p>
+            <p>Thanks to my mother, I developed a love for art and design from a young age while attending the local YMCA art camps that she ran. I spent most of my life sketching and drawing comic type characters, and redesgining Picso and Myspace pages (usually quite terribly) to share my interests with my close friends. Eventually, I stated to learn about all the ways you can create fun and interesting content digitally.</p>
+            <p>My goal is always to continuously create visually stimulating content for a variety of clients, while making the interaction between the client and the end user seemless and easy.</p>
         </div>
     </div>
 </div>
-
 
 {{!-- PORTFOLIO gallery SECTION --}}
 <div id="portTitleCon">
@@ -55,6 +57,7 @@
     </div>
 </section>
 
+
 {{!-- DEMO REEL SECTION --}}
 <section id="demoSection">
     <h2 class="hidden">Demo Reel</h2>
@@ -66,7 +69,6 @@
 <section id="contactSection">
     <h2 class="hidden">Contact Me</h2>
     <img src="images/contact_title.png" id="contactTitle" alt="Contact Me Title">
-    <p id="contactText" class="importantText">If you're interested in contacting me please fill out the form below!</p>
 
     <div id="contactForm">
         <!-- Name -->
