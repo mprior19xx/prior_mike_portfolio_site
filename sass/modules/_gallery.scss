@@ -1,0 +1,77 @@
+#portTitle{
+    width:90%;
+    margin-top:15px;
+}
+
+#portfolioSection{
+    margin-top:15px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+
+//styles gallery container
+.section{
+    display:flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#faveThingsSection{
+    display:flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+// Positions gallery
+.faveThings {
+    justify-content: center;
+    height:425px;
+    margin-bottom: 10px;
+}
+
+// Styles info from db
+.thing {
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:10px;
+    margin: 10px;
+}
+
+// Sizes and positions images
+.thing img {
+    margin: 0 auto;
+    opacity:0.7;
+    box-shadow: 4px 4px black;
+    margin-bottom:15px;
+}
+
+.thing img:hover{
+    opacity:1.0;
+}
+
+// Styles See more
+.seeMore {
+    padding: 10px;
+    background-color: black;
+    text-decoration: none;
+    color: $buttonTextColour;
+    margin: 0 auto;
+    margin-top: 10px;
+    transition: 0.25s;
+}
+
+// Styles see more hover
+.seeMore:hover {
+    background-color: $buttonHover;
+}
+
+// Styles description
+.info {
+    text-align: left;
+    line-height: 22px;
+    margin-top: 10px;
+}

@@ -1,27 +1,27 @@
 #aboutSection{
-    display:flex;
-    flex-direction:row;
-    justify-content: space-between;
-    height:200px;
-    margin-top:45px;
-    max-width:90%;
-    margin-bottom:50px;
+    background: black;
+    padding-bottom:25px;
 }
 
 #aboutImg{
-    width:60%;
+    margin-bottom:15px;
 }
 
 #aboutLeft{
-    width:40%;
     justify-content: center;
 }
 
 #aboutCopy{
     margin-top:10px;
+    max-width:80%;
+    margin:0 auto;
+    color: white;
 }
 
 #aboutSkills{
     margin-top:10px;
+    max-width:80%;
+    margin:0 auto;
+    color: white;
 }
 

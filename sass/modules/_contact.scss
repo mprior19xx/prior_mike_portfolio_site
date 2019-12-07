@@ -2,10 +2,23 @@ label{
     padding:10px;
 }
 
+#contactTitle{
+    width:90%;
+}
+
 #contactSection{
     display:block;
-    margin-top:35px;
-    margin-bottom:35px;
+    margin-top:100px;
+    background: black;
+    padding-bottom:20px;
+    padding-top:25px;
+}
+
+#contactText{
+    max-width:90%;
+    text-align:center;
+    margin: 0 auto;
+    color: white;
 }
 
 #contactForm{
@@ -13,6 +26,15 @@ label{
     flex-direction:column;
     max-width:80%;
     margin: 0 auto;
+    color:white;
+}
+
+#firstName, #lastName, #email, #subject, #message{
+    opacity:0.6;
+}
+
+#firstName:hover, #lastName:hover, #email:hover, #subject:hover, #message:hover{
+    opacity:1.0;
 }
 
 #firstName{
@@ -21,4 +43,8 @@ label{
 
 #lastName{
     margin-left:15px;
+}
+
+.submit{
+    margin-top: 10px;
 }
