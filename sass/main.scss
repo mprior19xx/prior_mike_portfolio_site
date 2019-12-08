@@ -52,6 +52,14 @@ h3{
 //TABLET VIEW
 //TABLET VIEW
 @media only screen and (min-width: 600px){
+
+    .title{
+        max-width:60%;
+    }
+
+    .title2{
+        max-width:80%
+    }
     
     #siteCon{
         max-width:800px;
@@ -72,10 +80,20 @@ h3{
         margin-top:15px;
     }
 
+    .whiteIcon{
+        width:10%;
+        margin: 15px;
+    }
+
+    .whiteIcon:hover{
+        width:11%;
+    }
+
     //PORTFOLIO SECTION
     // Positions gallery
     .faveThings {
-        height:510px;
+        height:475px;
+        max-width:80%;
     }
 
     //CONTACT SECTION
@@ -115,11 +133,12 @@ h3{
     //PORTFOLIO SECTION
     // Positions gallery
     .faveThings {
-        height:825px;
+        height:650px;
     }
 
     #demoReel{
-        height:750px;
+        max-width:90%;
+        height:600px;
     }
 
     //CONTACT SECTION
@@ -146,6 +165,7 @@ h3{
 
     #firstName{
         width:230px;
+        margin-right:25px;
     }
 
     #lastName{
