@@ -34,7 +34,7 @@ textarea{
 #contactForm{
     display:flex;
     flex-direction:column;
-    max-width:380px;
+    max-width:350px;
     margin: 0 auto;
     color:white;
 }
@@ -48,7 +48,12 @@ textarea{
 }
 
 #firstName{
-    margin-right:27px;
+    width:165px;
+    margin-right:7px;
+}
+
+#lastName{
+    width: 165px;
 }
 
 .submit{
