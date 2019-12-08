@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const hbs = require('hbs');
+var nodemailer = require('nodemailer');
 
 // set the port
 const port = process.env.PORT || 3000;
@@ -29,3 +30,18 @@ app.listen(port, () => {
     console.log(`app is running on ${port}`);
 })
 
+//nodemailer
+var transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+           user: 'mprior.designs@gmail.com',
+           pass: 'Kalyn143butts'
+       }
+   });
+
+const mailOptions = {
+    from: 'sender@email.com', // sender address
+    to: 'mprior.designs@gmail.com', // list of receivers
+    subject: 'Subject of your email', // Subject line
+    html: '<p>Your html here</p>'// plain text body
+};
