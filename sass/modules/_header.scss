@@ -6,25 +6,26 @@
     z-index: 100;
     background: white;
     height: 70px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+
 }
 
 // Positions header content and styles header
 #headerCon {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    margin: 0 auto;
     background: white;
-    width: 100%;
     padding-top: 15px;
     height: 40px;
-    padding-left: 5%;
-    padding-right: 5%;
-    width: 90%;
+    max-width: 90%;
 }
 
-// Sizes and positions logo
-#headerLogo {
-    width:45px;
+#headerLogoCon{
+    width:50px;
+    position: fixed;
+    left:25px;
 }
 
 // Fade in animation
@@ -50,6 +51,12 @@
     opacity:1.0;
     background-color: white;
 }
+
+#menuButton{
+    position:fixed;
+    right:20px;
+}
+
 //menu fade
 #menuBackground.openMenu {
     display: block;
@@ -84,10 +91,9 @@
 #mainNav ul li a {
 	display: block;
 	width: 100%;
-	text-align: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    font-size: 20pt;
+    text-align: center;
+    padding-bottom: 35px;
+    font-size: 18pt;
     color:$mainColour;
     transition: 0.25s ease-out;
 }

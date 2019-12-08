@@ -9,6 +9,7 @@
 @import 'modules/_about.scss';
 @import 'modules/_footer.scss';
 @import 'modules/_demo.scss';
+@import 'modules/_query.scss';
 
 // Hides all unwanted items
 .hidden {
@@ -45,3 +46,83 @@ h2{
 h3{
     margin-bottom:10px;
 }
+
+//MEDIA QUERIES
+
+//TABLET VIEW
+//TABLET VIEW
+@media only screen and (min-width: 600px) {
+    
+
+    #siteCon{
+        max-width:800px;
+        margin:0 auto;
+    }
+
+    #mainHeader{
+        height:90px;
+    }
+
+    #headerLogoCon{
+        left:100px;
+        width:75px;
+    }
+
+    #menuButton{
+        right:100px;
+        margin-top:15px;
+    }
+
+    //PORTFOLIO SECTION
+    // Positions gallery
+    .faveThings {
+        height:510px;
+    }
+
+    //CONTACT SECTION
+    #contactSection{
+        margin-top:40px;
+    }
+  }
+
+  //DESKTOP VIEWS
+  @media only screen and (min-width: 800px) {
+    
+    #siteCon{
+        max-width:1200px;
+        margin:0 auto;
+    }
+
+    #mainHeader{
+        height:120px;
+    }
+
+    #headerLogoCon{
+        left:70px;
+        width:100px;
+    }
+
+    #menuButton{
+        display:none;
+    }
+
+    #aboutCopy p{
+        margin-top:20px;
+    }
+
+    //PORTFOLIO SECTION
+    // Positions gallery
+    .faveThings {
+        height:825px;
+    }
+
+    //CONTACT SECTION
+    #contactSection{
+        margin-top:40px;
+    }
+
+    #demoReel{
+        height:750px;
+    }
+
+  }
