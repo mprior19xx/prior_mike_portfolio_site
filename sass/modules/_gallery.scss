@@ -4,67 +4,44 @@
 }
 
 #portfolioSection{
-    display:flex;
-    flex-direction: row;
-    margin-top:15px;
+    display:block;
+  overflow-y: hidden;
+  white-space: nowrap;
+    max-width:100%;
     border-style: solid;
     border-width: 2px;
     border-color: rgba(0, 0, 0, 0.5);
     font-family: $mainFont;
 }
 
-// //THIS IS THE SCROLL SNAP ON THE IMAGE GALLERY
-// .faveThings{
-//     scroll-snap-type: x proximity;
-//     overflow-x: scroll;
-//     white-space: nowrap;
-// }
-
-// .faveThings::-webkit-scrollbar {
-//     width: 0px;
-//     //background: transparent; /* make scrollbar transparent */
-// }
-
-// .thing{
-//     scroll-snap-align:start;
-// }
-
-
-
 //styles gallery container
 .section{
     display:flex;
-    justify-content: center;
-    margin: 0 auto;
+    flex-direction: row;
 }
 
-#faveThingsSection{
-    display:flex;
-    justify-content: center;
-    margin: 0 auto;
-}
 
 // Positions gallery
 .faveThings {
-    justify-content: center;
-    height:425px;
-    margin-bottom: 10px;
+    display:flex;
+    flex-direction:row;
+    margin: 0 auto;
 }
 
 // Styles info from db
 .thing {
-    margin:0 auto;
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
+    min-width:90%;
+    margin: 0 auto;
     justify-content: center;
-    padding:10px;
-    margin: 10px;
+    margin-left:25px;
 }
 
 // Sizes and positions images
 .thing img {
     margin: 0 auto;
     opacity:0.7;
+    max-width:100%;
 }
 
 .thing img:hover{
@@ -92,7 +69,7 @@
     text-decoration: none;
     color: $buttonTextColour;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 20px;
     transition: 0.25s;
 }
 
@@ -103,7 +80,6 @@
 
 // Styles description
 .info {
-    text-align: center;
     line-height: 22px;
     margin-top: 10px;
 }
