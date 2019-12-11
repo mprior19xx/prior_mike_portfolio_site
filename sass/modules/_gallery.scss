@@ -12,17 +12,17 @@
     font-family: $mainFont;
 }
 
-//THIS IS THE SCROLL SNAP ON THE IMAGE GALLERY
-.faveThings{
-    scroll-snap-type: x proximity;
-    overflow-x: scroll;
-    white-space: nowrap;
-}
+// //THIS IS THE SCROLL SNAP ON THE IMAGE GALLERY
+// .faveThings{
+//     scroll-snap-type: x proximity;
+//     overflow-x: scroll;
+//     white-space: nowrap;
+// }
 
-.faveThings::-webkit-scrollbar {
-    width: 0px;
-    //background: transparent; /* make scrollbar transparent */
-}
+// .faveThings::-webkit-scrollbar {
+//     width: 0px;
+//     //background: transparent; /* make scrollbar transparent */
+// }
 
 .thing{
     scroll-snap-align:start;
