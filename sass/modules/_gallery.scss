@@ -4,6 +4,8 @@
 }
 
 #portfolioSection{
+    display:flex;
+    flex-direction: row wrap;
     width:400px;
     margin-top:15px;
     border-style: solid;
@@ -24,9 +26,9 @@
 //     //background: transparent; /* make scrollbar transparent */
 // }
 
-.thing{
-    scroll-snap-align:start;
-}
+// .thing{
+//     scroll-snap-align:start;
+// }
 
 
 
