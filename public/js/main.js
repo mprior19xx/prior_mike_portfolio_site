@@ -57,13 +57,13 @@ const myVM = (() => {
         let targetInfo = document.querySelector(`#info${thing.ID}`),
             targetSeeMore = document.querySelector(`#seeMore${thing.ID}`),
             infoContent = `<div>${thing.Description}</div>`;
-        if (targetSeeMore.innerHTML == "More Info") {
+        if (targetSeeMore.innerHTML == "About This Project") {
 
             targetInfo.innerHTML = infoContent;
-            targetSeeMore.innerHTML = "Less Info";
+            targetSeeMore.innerHTML = "Dismiss";
         }else {
             targetInfo.innerHTML = "";
-            targetSeeMore.innerHTML = "More Info";
+            targetSeeMore.innerHTML = "About This Project";
         }
     }
     function getDescription(event) {
