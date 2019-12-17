@@ -1,76 +1,67 @@
-#portTitle{
-    width:90%;
-    margin-top:25px;
-}
-
 #portfolioSection{
-    display:block;
-  overflow-y: hidden;
-  white-space: nowrap;
-    max-width:100%;
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgba(0, 0, 0, 0.5);
     font-family: $mainFont;
-}
-
-//styles gallery container
-.section{
-    display:flex;
+    display: flex;
     flex-direction: row;
+    margin:0 auto;
+    max-width:90%;
 }
 
-
-// Positions gallery
-.faveThings {
-    display:flex;
-    flex-direction:row;
-    margin: 0 auto;
-}
-
-// Styles info from db
-.thing {
-    display: inline-block;
-    min-width:90%;
-    margin: 0 auto;
+.portfolioCon{
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-left:25px;
 }
 
-// Sizes and positions images
-.thing img {
+.pieceCon{
+    flex: 25%;
+    padding:15px;
+}
+
+.portImage{
+    margin-top: 8px;
+    vertical-align: middle;
+    width:95%;
     margin: 0 auto;
     opacity:0.7;
-    max-width:100%;
 }
 
-.thing img:hover{
+.portImage:hover{
     opacity:1.0;
-    box-shadow: 4px 4px black;
     margin-bottom:15px;
+    width:100%;
 }
 
-.thing h2{
+.pieceCon h2{
     font-size:22px;
     font-family: $mainFont;
     color: black;
     margin-top:10px;
 }
 
-.thing h3{
+.pieceCon h3{
     font-family: $mainFont;
     opacity: 0.8;
 }
 
+.role{
+    margin-top:10px;
+}
+
+.link{
+    max-width:70%;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
 // Styles See more
 .seeMore {
-    padding: 10px;
     background-color: black;
     text-decoration: none;
     color: $buttonTextColour;
     margin: 0 auto;
-    margin-top: 20px;
     transition: 0.25s;
+    margin-top:20px;
+    padding:10px;
 }
 
 // Styles see more hover
@@ -80,6 +71,6 @@
 
 // Styles description
 .info {
-    line-height: 22px;
-    margin-top: 10px;
+    margin-top:15px;
+    margin-bottom:15px;
 }
