@@ -56,7 +56,7 @@ const myVM = (() => {
     function addDescription(thing) {
         let targetInfo = document.querySelector(`#info${thing.ID}`),
             targetSeeMore = document.querySelector(`#seeMore${thing.ID}`),
-            infoContent = `<p>${thing.Description}</p>`;
+            infoContent = `<div>${thing.Description}</div>`;
         if (targetSeeMore.innerHTML == "More Info") {
 
             targetInfo.innerHTML = infoContent;

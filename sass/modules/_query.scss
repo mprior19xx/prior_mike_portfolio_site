@@ -22,12 +22,12 @@
     }
 
     #headerLogoCon{
-        left:100px;
+        left:50px;
         width:75px;
     }
 
     #menuButton{
-        right:100px;
+        right:50px;
         margin-top:15px;
     }
 
@@ -69,11 +69,11 @@
     #headerLogoCon{
         margin: 0 auto;
         width:75px;
-        left:400px;
+        left:50px;
     }
 
     #menuButton{
-        right:400px;
+        right:50px;
         margin-top:25px;
     }
 
@@ -122,4 +122,26 @@
     #lastName{
         width:230px;
     }
+  }
+
+  @media only screen and (min-width: 1300px) {
+    #headerLogoCon{
+        left:100px;
+    }
+
+    #menuButton{
+        right:100px;
+    }
+
+  }
+
+  @media only screen and (min-width: 1600px) {
+    #headerLogoCon{
+        left:400px;
+    }
+
+    #menuButton{
+        right:400px;
+    }
+
   }

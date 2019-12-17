@@ -37,3 +37,27 @@ router.get('/things/:id', (req, res) => {
 })
 
 module.exports = router;
+
+//nodemailer
+var nodemailer = require('nodemailer');
+var transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+           user: 'mprior.designs@gmail.com',
+           pass: 'Throwaway143'
+       }
+   });
+
+const mailOptions = {
+    from: 'sender@email.com', // sender address
+    to: 'mprior.designs@gmail.com', // list of receivers
+    subject: 'Subject of your email', // Subject line
+    html: '<p>Your html here</p>'// plain text body
+};
+
+transporter.sendMail(mailOptions, function (err, info) {
+    if(err)
+      console.log(err)
+    else
+      console.log(info);
+ });

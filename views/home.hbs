@@ -1,22 +1,21 @@
 <div id="heroCon">
             <h2 class="hidden">Main Hero Video</h2>
             <video  controls="False" autoplay="true" loop>
-                <source class="heroVid" src="video/prior_m_logo_reveal.mp4" type="video/mp4">
-                <source class="heroVid" src="video/prior_m_logo_reveal.ogg" type="video/ogg">
+                <source class="heroVid" src="video/prior_m_logo_reveal.mp4" type="video/mp4" alt="Logo Reveal">
+                <source class="heroVid" src="video/prior_m_logo_reveal.ogg" type="video/ogg" alt="logo Reveal">
+                <source class="heroVid" src="video/prior_m_logo_reveal.webm" type="video/ogg" alt="logo Reveal">
                 Your browser does not support this video.
             </video>
             <img id="heroTitle" src="images/hero_title.png" class="title2" alt="Michael Prior Design">
             <div id="heroSocial">
-                <img src="images/fb_icon_wht.svg" class="whiteIcon" alt="Facebook Icon">
-                <img src="images/yt_icon_wht.svg" class="whiteIcon" alt="Youtube Icon">
-                <img src="images/li_icon_wht.svg" class="whiteIcon" alt="Linked In Icon">
+                <a href="https://www.facebook.com/michael.prior.39"><img src="images/fb_icon_wht.svg" class="whiteIcon" alt="Facebook Icon"></a>
+                <a href="https://www.youtube.com/watch?v=CYn7_Fwsg1M"><img src="images/yt_icon_wht.svg" class="whiteIcon" alt="Youtube Icon"></a>
+                <a href="https://ca.linkedin.com/"><img src="images/li_icon_wht.svg" class="whiteIcon" alt="Linked In Icon"></a>
             </div>
 </div>
 
 <div id="aboutSection">
     <h2 class="hidden">About Me Section</h2>
-
-        <h2 class="hidden">About Me Image</h2>
         <img src="images/self_pic_1.png" id="aboutImg" alt="Michael Prior self Picture">
 
     <div id="aboutLeft">
@@ -35,19 +34,21 @@
 </div>
 <section id="portfolioSection" class="section">
     <h2 class="hidden">My Portfolio</h2>
-    <div class="faveThings">
-        <!-- loop through db and put the info on the page -->
+    <div class="portfolioCon">
         {{#each thing}} <!-- A for each loop -->
-        <div class="thing">
+        <div class="pieceCon">
             {{!-- img from db --}}
-            <img src="images/{{Image}}" alt="Video Game Cover" class="thingImage">
-            {{!-- title from db --}}
-            <h2>{{Title}}</h2>
-            {{!-- role from db --}}
-            <h3>{{Role}}</h3>
-            <a class="link" href="{{Link}}">{{Link}}</a>
-            <!-- Place Piece info here -->
-            <p class="info" id="info{{ID}}"></p>
+            <img src="images/{{Image}}" alt="Michael Prior Portfolio Piece" class="portImage">
+            <div id="extraInfo">
+                {{!-- title from db --}}
+                <h2>{{Title}}</h2>
+                <!-- Place Piece info here -->
+                <h3 class="role">{{Role}}</h3>
+                <a class="link" href="{{Link}}">{{Link}}</a> 
+            </div>
+            
+            <div class="info" id="info{{ID}}"> 
+            </div>
             {{!-- See more button --}}
             <a href="{{ID}}" class="seeMore" id="seeMore{{ID}}">More Info</a>
         </div>

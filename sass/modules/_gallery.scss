@@ -1,99 +1,67 @@
-#portTitle{
-    width:90%;
-    margin-top:25px;
-}
-
 #portfolioSection{
-    display:flex;
-    flex-direction: row;
-    margin-top:15px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgba(0, 0, 0, 0.5);
     font-family: $mainFont;
-}
-
-// //THIS IS THE SCROLL SNAP ON THE IMAGE GALLERY
-// .faveThings{
-//     scroll-snap-type: x proximity;
-//     overflow-x: scroll;
-//     white-space: nowrap;
-// }
-
-// .faveThings::-webkit-scrollbar {
-//     width: 0px;
-//     //background: transparent; /* make scrollbar transparent */
-// }
-
-// .thing{
-//     scroll-snap-align:start;
-// }
-
-
-
-//styles gallery container
-.section{
-    display:flex;
-    justify-content: center;
-    margin: 0 auto;
-}
-
-#faveThingsSection{
-    display:flex;
-    justify-content: center;
-    margin: 0 auto;
-}
-
-// Positions gallery
-.faveThings {
-    justify-content: center;
-    height:425px;
-    margin-bottom: 10px;
-}
-
-// Styles info from db
-.thing {
-    margin:0 auto;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding:10px;
-    margin: 10px;
+    flex-direction: row;
+    margin:0 auto;
+    max-width:90%;
 }
 
-// Sizes and positions images
-.thing img {
+.portfolioCon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pieceCon{
+    flex: 25%;
+    padding:15px;
+}
+
+.portImage{
+    margin-top: 8px;
+    vertical-align: middle;
+    width:95%;
     margin: 0 auto;
     opacity:0.7;
 }
 
-.thing img:hover{
+.portImage:hover{
     opacity:1.0;
-    box-shadow: 4px 4px black;
     margin-bottom:15px;
+    width:100%;
 }
 
-.thing h2{
+.pieceCon h2{
     font-size:22px;
     font-family: $mainFont;
     color: black;
     margin-top:10px;
 }
 
-.thing h3{
+.pieceCon h3{
     font-family: $mainFont;
     opacity: 0.8;
 }
 
+.role{
+    margin-top:10px;
+}
+
+.link{
+    max-width:70%;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
 // Styles See more
 .seeMore {
-    padding: 10px;
     background-color: black;
     text-decoration: none;
     color: $buttonTextColour;
     margin: 0 auto;
-    margin-top: 10px;
     transition: 0.25s;
+    margin-top:20px;
+    padding:10px;
 }
 
 // Styles see more hover
@@ -103,7 +71,6 @@
 
 // Styles description
 .info {
-    text-align: center;
-    line-height: 22px;
-    margin-top: 10px;
+    margin-top:15px;
+    margin-bottom:15px;
 }
