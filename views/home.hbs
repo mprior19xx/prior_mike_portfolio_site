@@ -37,20 +37,20 @@
     <div class="portfolioCon">
         {{#each thing}} <!-- A for each loop -->
         <div class="pieceCon">
+            <h2 id="pieceTitle">{{Title}}</h2>
             {{!-- img from db --}}
-            <img src="images/{{Image}}" alt="Michael Prior Portfolio Piece" class="portImage">
+            <a class="imgLink" href="{{Link}}">
+            <img src="images/{{Image}}" alt="Michael Prior Portfolio Piece" class="portImage"></a>
+            <a class="link" href="{{Link}}">{{Link}}</a> 
             <div id="extraInfo">
-                {{!-- title from db --}}
-                <h2>{{Title}}</h2>
                 <!-- Place Piece info here -->
-                <h3 class="role">{{Role}}</h3>
-                <a class="link" href="{{Link}}">{{Link}}</a> 
+                {{!-- <h3 class="role">{{Role}}</h3> --}}
             </div>
             
             <div class="info" id="info{{ID}}"> 
             </div>
             {{!-- See more button --}}
-            <a href="{{ID}}" class="seeMore" id="seeMore{{ID}}">More Info</a>
+            <a href="{{ID}}" class="seeMore" id="seeMore{{ID}}">About This Project</a>
         </div>
         {{/each}}
     </div>
@@ -69,28 +69,29 @@
     <h2 class="hidden">Contact Me</h2>
     <img src="images/contact_title.png" id="contactTitle" class="title" alt="Contact Me Title">
 
-    <div id="contactForm">
+    <div id="contactCopy">
+        <p>Would you like to get in touch? Shoot me an email by filling out the form below and I'll be sure to get back to you!(After I weed through all the spam mail)</p>
+    </div>
+     <form id="contactForm" method="POST" action="contact">
         <!-- Name -->
-        <label for="firstName" class="hidden">Name</label>
+        <label for="firstName">Name</label>
         <div id="contactNameInput">
-            <input id="firstName" type="text" placeholder="First Name" required>
-            <input id="lastName" type="text" placeholder="Last Name" required>
+            <input id="firstName" type="text" placeholder="First Name" name="firstName" required>
+            <input id="lastName" type="text" placeholder="Last Name" name="lastName" required>
         </div> <!-- End contactName -->
 
 		<!-- Email -->
-		<label for="email" class="hidden">Email</label>
-		<input id="email" type="Email" placeholder="example@website.com" required>
-
-        <!-- Subject -->
-		<label for="subject" class="hidden">Subject</label>
-		<input id="subject" type="text" placeholder="Let's work together!" required>
+		<label for="email">Email</label>
+		<input id="email" type="Email" placeholder="bob_ross@email.com" name="email" required>
 
 		<!-- Message -->
-		<label for="message" class="hidden">Message</label>
-		<textarea id="message" cols="50" rows="14" placeholder="Write your message here!" required></textarea>
+		<label for="message">Message</label>
+		<textarea id="message" cols="50" rows="14" placeholder="Leave your message here." name="message" required></textarea>
 
 		<!-- Submit Button -->
-		<input class="submit" type="submit" value="Submit">
-	</div> <!-- End contactForm -->
+		<input class="submit" type="submit" value="Submit" name="submit">
+        <p>{{msg}}</p>
+	</form> <!-- End contactForm -->
+
 </section> <!-- End contactSection -->
 

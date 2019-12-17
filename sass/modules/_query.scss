@@ -9,8 +9,8 @@
     }
 
     .title2{
-        max-width:80%
-    }
+        max-width:80%;
+        }
     
     #siteCon{
         max-width:800px;
@@ -42,9 +42,14 @@
 
     //PORTFOLIO SECTION
     // Positions gallery
-    .faveThings {
-        height:475px;
-        max-width:80%;
+    #portTitleCon{
+        margin-top:30px;
+        margin-bottom:30px;
+    }
+
+    #demoTitle{
+        margin-top:30px;
+        margin-bottom:30px;
     }
 
     //CONTACT SECTION
@@ -79,12 +84,6 @@
 
     #aboutCopy p{
         margin-top:20px;
-    }
-
-    //PORTFOLIO SECTION
-    // Positions gallery
-    .faveThings {
-        height:650px;
     }
 
     #demoReel{
